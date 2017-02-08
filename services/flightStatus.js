@@ -15,9 +15,9 @@ var apiBaseURL = 'https://api.apim.ibmcloud.com/banchasetthananau1ibmcom-dev/sb/
 
 
 // Edits: Srinivas 10072016
-var faaClientSecret = 'B3fT0eI3bM3dS4eO5rL6xG3pP8vL8yT0jO6hQ8kH7oD0cE0sW7';
-var faaClientId = '0605f6cd-3b05-4428-8ff4-83dbfea0be4a';
-var statusBaseURL = 'https://api.us.apiconnect.ibmcloud.com/srinivausibmcom-bluemix-bootcamp/ctg-faa-status/airport';
+var faaClientSecret = 'uA1aI7nI3jW5oK0nW0rW0dX4pB6iC0eV2fU3yS0jJ1oB2iQ4vJ';
+var faaClientId = '3405e4ce-bfe3-4a20-bfad-37feb476e590';
+var statusBaseURL = 'https://api.eu.apiconnect.ibmcloud.com/lubux-dev/ctg-faa-airport-status/airport';
 
 
 var petstoreCreds = appEnv.getServiceCreds(/petstore/i);
@@ -64,8 +64,8 @@ exports.findStatus = function(req, res) {
         '?format=' + req.query.format,
         method: 'GET', //Specify the method
         headers: { //We can define headers too
-          'X-IBM-Client-Id':'0605f6cd-3b05-4428-8ff4-83dbfea0be4a',
-          'X-IBM-Client-Secret':'B3fT0eI3bM3dS4eO5rL6xG3pP8vL8yT0jO6hQ8kH7oD0cE0sW7'
+          'X-IBM-Client-Id':faaClientId,
+          'X-IBM-Client-Secret':faaClientSecret
         }
     };
     //Edits: Srinivas Cheemalapati 10/05/2016
