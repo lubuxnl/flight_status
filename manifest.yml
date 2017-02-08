@@ -1,8 +1,8 @@
 applications:
 - path: .
-  memory: 128M
+  memory: 512M
   instances: 1
-  domain: mybluemix.net
+  domain: api.eu-gb.bluemix.net
   name: Flight Status Node App
   host: Flight-Status-Node-App
   disk_quota: 1024M
